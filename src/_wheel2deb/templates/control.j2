@@ -5,7 +5,7 @@ Maintainer: {{ ctx.maintainer_name }} <{{ ctx.maintainer_email }}>
 Build-Depends: debhelper
 Standards-Version: 3.9.6
 
-Package: {{ package.name }}
+Package: visyond-{{ package.name }}
 Architecture: {{ package.arch }}
 Depends: {{ package.depends|sort|join(', ') }}
 {%- if ctx.conflicts %}{{ '\n' }}Conflicts: {{ ctx.conflicts|sort|join(', ') }}{% endif %}
