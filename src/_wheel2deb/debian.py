@@ -53,7 +53,7 @@ class SourcePackage:
         self.pyvers = ctx.python_version
 
         # debian package name
-        self.name = suggest_name(ctx, wheel.name)
+        self.name = 'visyond' + '-' + suggest_name(ctx, wheel.name)
 
         # debian package version
         self.version = ctx.version_template.format(

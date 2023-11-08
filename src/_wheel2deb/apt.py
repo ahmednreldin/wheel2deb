@@ -17,7 +17,7 @@ _cache = None
 @attr.s(frozen=True)
 class Package:
     # package name
-    name = 'visyond' + '-' + attr.ib(type=str)
+    name = attr.ib(type=str)
     # upstream version
     version = attr.ib(type=str)
     # debian revision
