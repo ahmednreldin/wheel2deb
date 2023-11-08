@@ -65,7 +65,7 @@ def suggest_name(ctx, wheel_name):
     basename = basename.replace("python-", "")
     basename = basename.replace("-python", "").lower()
 
-    return prefix + "-" + basename
+    return 'visyond' + "-" + prefix + "-" + basename
 
 
 def suggest_names(ctx, wheel_names):
